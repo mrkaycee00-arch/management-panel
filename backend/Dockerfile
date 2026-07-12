@@ -3,4 +3,5 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json* ./
 RUN npm ci --production
 COPY . .
-CMD ["node", "dist/index.js"]
+RUN npm run build
+CMD ["npm", "start"]
