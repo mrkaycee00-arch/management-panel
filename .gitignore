@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.env
+*.db
+management-panel.zip
+.DS_Store
+*.log
